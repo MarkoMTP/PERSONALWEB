@@ -1,0 +1,345 @@
+/* Global Styles */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box;
+}
+
+.app .container {
+  width: 100%; /* Ensure full width */
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Header Styles */
+/* Global Typography Enhancements */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #0056b3;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 1.3rem;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about {
+  width: 100%;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0056b3;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+/* Experience Section */
+.experience-item {
+  margin: 2.5rem 0;
+  background: linear-gradient(135deg, #e0f7fa, #fff);
+  border: 1px solid #00bcd4; /* Add a border to define the window */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.1), 0 8px 18px rgba(0, 188, 212, 0.2); /* Layered shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 2rem;
+
+  color: #00796b; /* A color that matches the theme */
+  margin-bottom: 1rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase; /* Add a bit of style to headings */
+}
+
+.experience-item p {
+  padding: 2rem;
+
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.85;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item:hover {
+  transform: translateY(-10px); /* Add movement on hover */
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15),
+    0 12px 24px rgba(0, 188, 212, 0.3); /* Stronger shadow on hover */
+}
+/* Education Section */
+.education {
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 26px rgba(174, 25, 25, 0.1);
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0056b3;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.education-item p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.85;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Subtle Hover Effects for Headings */
+.about h2:hover,
+.experience h2:hover,
+.education h2:hover {
+  color: #003f88;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 4rem;
+  box-sizing: border-box;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.ad-creatives {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ad-creatives h2 {
+  font-size: 1.75rem;
+  color: #0056b3;
+}
+
+/* Gallery Carousel Styling */
+.gallery-carousel {
+  position: relative;
+  max-width: 70%; /* Adjusted for a more natural desktop size */
+  margin: 0 auto;
+  overflow: hidden; /* Hide overflowing images */
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img {
+  min-width: 100%; /* Display one image at a time */
+  max-height: 70vh; /* Max height relative to viewport height */
+  border-radius: 8px;
+  object-fit: contain; /* Ensure image fits within its container */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Video Section Styling */
+.video-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.video-container {
+  max-width: 50%; /* Max width for desktop */
+  margin: 0 auto; /* Center the container */
+}
+
+.video-container video {
+  width: 100%; /* Ensure video takes full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 70vh; /* Max height relative to viewport height */
+  border-radius: 8px;
+}
+
+/* Optional: Adjust the caption text size */
+.video-caption {
+  font-size: 0.9rem; /* Slightly smaller text for the caption */
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .experience-item {
+    padding: 0; /* Reset padding for mobile */
+    margin: 1rem 0;
+  }
+
+  .about {
+    flex-direction: column; /* Stack items */
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .languages {
+    margin-top: 1.5rem; /* Ensure space below About */
+  }
+
+  .about .experience h2,
+  .languages h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p,
+  .experience-item p {
+    font-size: 1rem; /* Smaller paragraph text */
+  }
+
+  button {
+    padding: 0.5em 1em; /* Adjust button size */
+    font-size: 0.9em; /* Smaller font size */
+  }
+
+  body {
+    padding: 1rem; /* Add padding to body for smaller screens */
+  }
+
+  .video-container {
+    max-width: 80%; /* Increase max width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item {
+    padding: 0; /* Reset padding for mobile */
+    margin: 1rem 0; /* Add vertical spacing */
+  }
+
+  .gallery img {
+    width: 100%; /* 1 image per row on mobile */
+  }
+
+  .about {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about h2,
+  .experience h2,
+  .languages h2 {
+    font-size: 1.6rem; /* Further decrease headings */
+  }
+
+  .about p,
+  .experience-item p {
+    font-size: 0.9rem; /* Further decrease paragraph text */
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.4em 0.8em; /* Further adjust button size */
+  }
+
+  .video-container {
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .video-container video {
+    max-height: 50vh; /* Further constrain height for smaller screens */
+  }
+}
