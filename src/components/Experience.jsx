@@ -45,7 +45,7 @@ const Experience = () => {
             <li>
               Phone:
               <a href="tel:+385958274130" className="contact-link">
-                +385958274130
+                +385 95 827 4130
               </a>
             </li>
           </ul>
@@ -86,7 +86,7 @@ const Experience = () => {
             <li>
               Phone:
               <a href="tel:+447754615093" className="contact-link">
-                +447754615093
+                +44 77 546 15093
               </a>
             </li>
           </ul>
@@ -147,7 +147,7 @@ const Experience = () => {
             <li>
               Phone:{" "}
               <a href="tel:+385955639933" className="contact-link">
-                +385955639933
+                +385 95 563 9933
               </a>
             </li>
           </ul>
