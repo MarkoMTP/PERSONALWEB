@@ -34,14 +34,18 @@ const Experience = () => {
           <ul>
             <li>
               Email:{" "}
-              <a href="mailto:diana.tomic@example.com" className="contact-link">
-                diana.tomic@example.com
+              <a
+                href="mailto:diana.tomic40@gmail.com
+"
+                className="contact-link"
+              >
+                diana.tomic40@gmail.com
               </a>
             </li>
             <li>
-              Phone:{" "}
-              <a href="tel:+1234567890" className="contact-link">
-                +1234567890
+              Phone:
+              <a href="tel:+385958274130" className="contact-link">
+                +385958274130
               </a>
             </li>
           </ul>
@@ -75,8 +79,14 @@ const Experience = () => {
           <ul>
             <li>
               Email:{" "}
-              <a href="mailto:diana.tomic@example.com" className="contact-link">
-                ROKO@example.com
+              <a href="mailto:roko.rajcic@gmail.com" className="contact-link">
+                roko.rajcic@gmail.com
+              </a>
+            </li>
+            <li>
+              Phone:
+              <a href="tel:+447754615093" className="contact-link">
+                +447754615093
               </a>
             </li>
           </ul>
@@ -127,14 +137,17 @@ const Experience = () => {
           <ul>
             <li>
               Email:{" "}
-              <a href="mailto:diana.tomic@example.com" className="contact-link">
-                jmatkovic@example.com
+              <a
+                href="mailto:contact@madalbal-hrvatska.com"
+                className="contact-link"
+              >
+                contact@madalbal-hrvatska.com
               </a>
             </li>
             <li>
               Phone:{" "}
-              <a href="tel:+1234567890" className="contact-link">
-                +1234567890
+              <a href="tel:+385955639933" className="contact-link">
+                +385955639933
               </a>
             </li>
           </ul>
