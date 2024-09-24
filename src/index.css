@@ -4,7 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #f7f9fc; /* Light background for softness */
   color: #333;
   line-height: 1.6;
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -20,17 +20,8 @@ body {
 }
 
 /* Header Styles */
-/* Global Typography Enhancements */
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* Header Styles */
 header {
-  background-color: #0056b3;
+  background-color: #007bff; /* Bright blue */
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -53,6 +44,21 @@ header p {
   line-height: 1.6;
 }
 
+header button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #004494;
+}
+
 /* About Section */
 .about {
   width: 100%;
@@ -65,12 +71,13 @@ header p {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+  padding: 2rem; /* Added padding */
 }
 
 .about h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0056b3;
+  color: #007bff;
   letter-spacing: 0.05rem;
   margin-bottom: 1.5rem;
 }
@@ -83,12 +90,21 @@ header p {
 }
 
 /* Experience Section */
+
+.experience {
+  text-align: center;
+}
+
 .experience-item {
-  margin: 2.5rem 0;
-  background: linear-gradient(135deg, #e0f7fa, #fff);
-  border: 1px solid #00bcd4; /* Add a border to define the window */
+  margin: 8.5rem;
+  background: linear-gradient(
+    135deg,
+    hsl(190, 100%, 90%),
+    #fff
+  ); /* Softer gradient */
+  border: 2px solid #007bff; /* Bright blue border */
   border-radius: 12px; /* Smooth rounded corners */
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.1), 0 8px 18px rgba(0, 188, 212, 0.2); /* Layered shadow for depth */
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.1), 0 8px 18px rgba(0, 188, 212, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -96,8 +112,7 @@ header p {
   font-size: 1.7rem;
   font-weight: 600;
   padding: 2rem;
-
-  color: #00796b; /* A color that matches the theme */
+  color: #0056b3; /* Slightly darker blue */
   margin-bottom: 1rem;
   letter-spacing: 0.02rem;
   text-transform: uppercase; /* Add a bit of style to headings */
@@ -105,7 +120,6 @@ header p {
 
 .experience-item p {
   padding: 2rem;
-
   font-size: 1.2rem;
   color: #444;
   line-height: 1.85;
@@ -118,6 +132,7 @@ header p {
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15),
     0 12px 24px rgba(0, 188, 212, 0.3); /* Stronger shadow on hover */
 }
+
 /* Education Section */
 .education {
   padding: 2.5rem;
@@ -131,7 +146,7 @@ header p {
 .education h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0056b3;
+  color: #007bff;
   letter-spacing: 0.05rem;
   margin-bottom: 1.5rem;
 }
@@ -150,12 +165,24 @@ header p {
   max-width: 800px;
   margin: 0 auto;
 }
+.services h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.5rem;
+}
 
 /* Subtle Hover Effects for Headings */
 .about h2:hover,
 .experience h2:hover,
-.education h2:hover {
-  color: #003f88;
+.education h2:hover .services h2:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.services h2:hover {
+  color: #0056b3;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
@@ -177,82 +204,104 @@ footer p {
   opacity: 0.8;
 }
 
-.ad-creatives {
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+.contact-link {
+  color: #007bff; /* Match header and highlight color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-.ad-creatives h2 {
-  font-size: 1.75rem;
+.contact-link:hover {
   color: #0056b3;
+  border-bottom: 2px solid #0056b3;
 }
 
-/* Gallery Carousel Styling */
-.gallery-carousel {
-  position: relative;
-  max-width: 70%; /* Adjusted for a more natural desktop size */
-  margin: 0 auto;
-  overflow: hidden; /* Hide overflowing images */
-}
-
-.gallery {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.gallery img {
-  min-width: 100%; /* Display one image at a time */
-  max-height: 70vh; /* Max height relative to viewport height */
-  border-radius: 8px;
-  object-fit: contain; /* Ensure image fits within its container */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 50%;
-}
-
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-/* Video Section Styling */
-.video-section {
-  margin-top: 1.5rem;
+/* Services Section */
+.services {
   text-align: center;
+  padding: 2rem;
 }
 
-.video-container {
-  max-width: 50%; /* Max width for desktop */
-  margin: 0 auto; /* Center the container */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* Space between service items */
 }
 
-.video-container video {
-  width: 100%; /* Ensure video takes full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 70vh; /* Max height relative to viewport height */
-  border-radius: 8px;
+.service-item {
+  background-color: #f9f9f9; /* Softer background for service items */
+  border: 2px solid #007bff; /* Bright blue border */
+  border-radius: 5px;
+  padding: 1.5rem 2rem; /* Increased padding for comfort */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-/* Optional: Adjust the caption text size */
-.video-caption {
-  font-size: 0.9rem; /* Slightly smaller text for the caption */
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.contact-info {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 600px;
 }
 
+.contact-info h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #003f88;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.contact-info {
+  border: 2px solid transparent; /* Initial border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Add some padding */
+  transition: border-color 2.5s ease; /* Smooth transition for border color */
+}
+
+.contact-info.animate-border {
+  border-color: red; /* Change border color to red on animation */
+}
 /* Responsive Styles */
 @media (max-width: 800px) {
   .experience-item {
@@ -262,7 +311,7 @@ button {
 
   .about {
     flex-direction: column; /* Stack items */
-    padding: 0;
+    padding: 1rem; /* Add padding for mobile */
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -291,20 +340,12 @@ button {
   body {
     padding: 1rem; /* Add padding to body for smaller screens */
   }
-
-  .video-container {
-    max-width: 80%; /* Increase max width for smaller screens */
-  }
 }
 
 @media (max-width: 480px) {
   .experience-item {
     padding: 0; /* Reset padding for mobile */
     margin: 1rem 0; /* Add vertical spacing */
-  }
-
-  .gallery img {
-    width: 100%; /* 1 image per row on mobile */
   }
 
   .about {
@@ -333,13 +374,5 @@ button {
 
   button {
     padding: 0.4em 0.8em; /* Further adjust button size */
-  }
-
-  .video-container {
-    max-width: 100%; /* Full width on very small screens */
-  }
-
-  .video-container video {
-    max-height: 50vh; /* Further constrain height for smaller screens */
   }
 }

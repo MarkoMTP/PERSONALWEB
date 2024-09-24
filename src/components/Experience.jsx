@@ -1,115 +1,85 @@
-import img1 from "../assets/madal bal 1.jpg";
-import { useState, useRef, useEffect } from "react";
-import img2 from "../assets/mbal2.jpg";
-import img3 from "../assets/mbal3.jpg";
-import img4 from "../assets/mbal4.jpg";
-import video1 from "../assets/vid.mp4";
-
 const Experience = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const galleryRef = useRef(null);
-
-  const images = [img1, img2, img3, img4];
-  const totalImages = images.length;
-
-  const updateCarousel = () => {
-    if (galleryRef.current) {
-      const width = galleryRef.current.clientWidth;
-      galleryRef.current.style.transform = `translateX(-${
-        currentIndex * width
-      }px)`;
-    }
-  };
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === totalImages - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? totalImages - 1 : prevIndex - 1
-    );
-  };
-
-  useEffect(() => {
-    updateCarousel();
-  }, [currentIndex]);
-
-  useEffect(() => {
-    const handleResize = () => updateCarousel();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <section className="experience">
-      <h2>My Experience</h2>
+      <h2 style={{ fontSize: "2.5rem" }}>My Experience</h2>
 
       {/* ComeTe Jewelry Internship */}
       <div className="experience-item">
-        <h3>Freelancer at Apostrof d.o.o</h3>
+        <h3>Freelancer for the marketing team of Brosway Croatia</h3>
         <p>
-          As a freelancer for Apostrof d.o.o, I was tasked with creating and
-          managing ad campaigns for Meta platforms, including Facebook and
-          Instagram. I designed and implemented targeted ads aimed at driving
-          engagement and brand awareness, optimizing performance through
-          continuous testing and data analysis. My approach focused on
-          delivering tailored ad creatives that resonated with the audience and
-          maximized conversion rates. This freelance role allowed me to enhance
-          my skills in paid social media advertising, focusing on achieving
-          tangible results for clients through strategic digital marketing
-          efforts.
+          Before working with Marko, we struggled with the complexities of Meta
+          advertising. We felt that our campaigns weren’t delivering the results
+          we needed. We weren’t reaching our target audience effectively, and
+          our engagement levels were stagnant. We knew we needed help but
+          weren’t sure where to turn. When we brought Marko on board as a
+          freelancer , everything changed. He immediately took control of our
+          Facebook and Instagram campaigns, creating a targeted strategy that
+          focused on increasing engagement and brand awareness. Marko's approach
+          was incredibly professional; he took the time to understand our brand,
+          our goals, and our audience. The ads he designed were creative,
+          effective, and tailored perfectly to resonate with our target market.
+          Thanks to Marko, we saw a dramatic improvement in our ad performance.
+          Our campaigns began delivering much higher conversion rates, and we
+          started seeing real, tangible results. Marko continuously optimized
+          the campaigns through data analysis and testing, ensuring that we were
+          getting the most out of our budget. His expertise in paid social media
+          advertising was evident, and his dedication to achieving results for
+          us was unparalleled. Working with Marko was an absolute pleasure. He
+          was always available to make adjustments or provide insights, and his
+          strategic input has been invaluable in helping us grow. If you're
+          looking for someone who can take your Meta ad campaigns to the next
+          level, Marko is the person you need. We highly recommend him! For more
+          information about my work with Brosway Croatia, feel free to contact
+          Diana Tomic, Head of Marketing:
+          <ul>
+            <li>
+              Email:{" "}
+              <a href="mailto:diana.tomic@example.com" className="contact-link">
+                diana.tomic@example.com
+              </a>
+            </li>
+            <li>
+              Phone:{" "}
+              <a href="tel:+1234567890" className="contact-link">
+                +1234567890
+              </a>
+            </li>
+          </ul>
         </p>
-
-        <p>For more about my work, you can visit:</p>
-
-        <a
-          href="https://comete.hr/?gad_source=1&gclid=Cj0KCQjwgL-3BhDnARIsAL6KZ69nWEbfOEmmOeRsHf1f638SJQSd3aXuaxuhpBrwmpG0aIvqx2h4n0EaAmB4EALw_wcB"
-          style={{
-            fontSize: "1.5rem",
-            display: "inline-block",
-            padding: "0.5rem 1.5rem",
-            backgroundColor: "#0056b3",
-            color: "white",
-            textDecoration: "none",
-            borderRadius: "5px",
-            transition: "background-color 0.3s ease",
-            margin: "2rem",
-          }}
-          onMouseOver={(e) => (e.target.style.backgroundColor = "#004494")}
-          onMouseOut={(e) => (e.target.style.backgroundColor = "#0056b3")}
-        >
-          Come Te
-        </a>
       </div>
 
       {/* Event Management Agency - Student Events, London */}
       <div className="experience-item">
-        <h3>Event Management Agency - Student Events, London</h3>
+        <h3>Event Management Agency AliveNlive- London</h3>
         <p>
-          I collaborated with a London-based event management agency focused on
-          student events to help them significantly increase their audience
-          reach and drive ticket sales. By conducting a thorough analysis of
-          their current digital marketing efforts, I identified key
-          opportunities to enhance engagement.
-        </p>
-        <p>
-          My approach involved restructuring their social media strategy by
-          creating highly targeted ad campaigns on platforms like Instagram and
-          Facebook, aimed specifically at university students in the London
-          area. I also optimized the content by introducing eye-catching visuals
-          and event-specific promotional offers that resonated with the student
-          demographic.
-        </p>
-        <p>
-          Additionally, I implemented a retargeting strategy to engage users who
-          had previously shown interest in their events but had not yet
-          completed a purchase. This campaign boosted conversions by re-engaging
-          potential attendees. Within two weeks, the results were remarkable: a
-          400% increase in ticket sales, with improved social media engagement
-          and brand visibility.
+          Before working with Marko, we were struggling to expand our audience
+          and drive ticket sales for our student events in London. Our social
+          media strategy wasn’t producing the engagement we needed, and our ads
+          weren’t converting. We knew we needed to revamp our approach but
+          didn’t have a clear direction. When Marko came on board, everything
+          changed. He immediately analyzed our current digital marketing efforts
+          and identified where we could improve. His expertise really shone
+          through as he restructured our social media strategy, creating highly
+          targeted ad campaigns specifically for university students in the
+          London area. Marko also introduced creative visuals and event-specific
+          offers that grabbed the attention of our audience. Thanks to Marko’s
+          strategic approach, the results were incredible. In just two weeks,
+          our ticket sales increased by 400%, and our engagement on platforms
+          like Instagram and Facebook skyrocketed. His retargeting strategy was
+          particularly effective, bringing back potential attendees who hadn’t
+          completed their purchases. Working with Marko was a game-changer for
+          us, and we’re beyond thrilled with the outcome. He’s professional,
+          dedicated, and has a clear talent for digital marketing. We highly
+          recommend him! For more information about my work with AliveNlive,
+          feel free to contact Roko Rajcic, Co-Owner:
+          <ul>
+            <li>
+              Email:{" "}
+              <a href="mailto:diana.tomic@example.com" className="contact-link">
+                ROKO@example.com
+              </a>
+            </li>
+          </ul>
         </p>
 
         <a
@@ -136,24 +106,42 @@ const Experience = () => {
       <div className="experience-item">
         <h3>Project with Lorem d.o.o</h3>
         <p>
-          I reached out to Lorem d.o.o, a prominent Croatian company
-          specializing in the import of pharmaceutical products, to present a
-          unique opportunity for growth. Leveraging my expertise in digital
-          marketing and my skills in creating efficient websites, I proposed a
-          tailored strategy to enhance their online presence and profitability.
-          By developing a custom-built website and implementing a targeted
-          digital marketing campaign for one of their specific products, Madal
-          Bal Neera sirup, we successfully generated €4,000 in revenue within
-          just four weeks. Currently, I continue to support Lorem d.o.o as they
-          remain my client, managing their Meta ads (Facebook and Instagram) and
-          overseeing their social media accounts for their product. This
-          collaboration not only demonstrates the potential for increased
-          profits but also establishes a strong foundation for ongoing digital
-          transformation, with many more plans in the pipeline.
+          Before working with Marko, Lorem d.o.o was facing challenges in
+          establishing a strong online presence for our pharmaceutical products.
+          We knew we needed to enhance our digital marketing efforts but weren’t
+          sure how to effectively reach our target audience or drive sales. When
+          Marko reached out to us, he presented a unique opportunity for growth.
+          He proposed a tailored digital marketing strategy that included
+          developing a custom-built website specifically for our product, Madal
+          Bal Neera sirup. His expertise in digital marketing and website
+          creation was evident as he implemented a targeted campaign that
+          significantly boosted our visibility. Thanks to Marko’s efforts, we
+          generated €4,000 in revenue within just four weeks. His ongoing
+          support has been invaluable as he continues to manage our Meta ads and
+          oversee our social media accounts. This collaboration not only
+          demonstrated the potential for increased profits but also laid a
+          strong foundation for our ongoing digital transformation. We’re
+          excited about the many plans we have in the pipeline, and we highly
+          recommend Marko for anyone looking to elevate their online presence!
+          For more information, feel free to contact us:
+          <ul>
+            <li>
+              Email:{" "}
+              <a href="mailto:diana.tomic@example.com" className="contact-link">
+                jmatkovic@example.com
+              </a>
+            </li>
+            <li>
+              Phone:{" "}
+              <a href="tel:+1234567890" className="contact-link">
+                +1234567890
+              </a>
+            </li>
+          </ul>
         </p>
 
         <a
-          href="https://madalbal-hrvatska.com/it"
+          href="https://madalbal-hrvatska.com/en"
           style={{
             marginTop: "2rem",
 
@@ -194,8 +182,55 @@ const Experience = () => {
         >
           Madal Bal Instagram
         </a>
+      </div>
+    </section>
+  );
+};
 
-        <section className="ad-creatives">
+export default Experience;
+
+{
+  /* 
+   const [currentIndex, setCurrentIndex] = useState(0);
+  const galleryRef = useRef(null);
+
+  const images = [img1, img2, img3, img4];
+  const totalImages = images.length;
+
+  const updateCarousel = () => {
+    if (galleryRef.current) {
+      const width = galleryRef.current.clientWidth;
+      galleryRef.current.style.transform = `translateX(-${
+        currentIndex * width
+      }px)`;
+    }
+  };
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === totalImages - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? totalImages - 1 : prevIndex - 1
+    );
+  };
+
+  useEffect(() => {
+    updateCarousel();
+  }, [currentIndex]);
+
+  useEffect(() => {
+    const handleResize = () => updateCarousel();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  
+  
+  <section className="ad-creatives">
           <h2>Ad Creatives</h2>
           <div className="gallery-carousel">
             <div className="gallery" ref={galleryRef}>
@@ -223,10 +258,5 @@ const Experience = () => {
               Questo video è in lingua croata e si rivolge al pubblico croato.
             </p>
           </div>
-        </section>
-      </div>
-    </section>
-  );
-};
-
-export default Experience;
+        </section> */
+}
